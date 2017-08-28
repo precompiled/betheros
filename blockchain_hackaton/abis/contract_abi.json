@@ -1,0 +1,164 @@
+[
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "username",
+        "type": "string"
+      }
+    ],
+    "name": "getContribution",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "username",
+        "type": "string"
+      },
+      {
+        "name": "action",
+        "type": "uint256"
+      }
+    ],
+    "name": "handleContribution",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "username",
+        "type": "string"
+      },
+      {
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "addContributor",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "actionPoints",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bytes",
+        "value": "0x030201"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [],
+    "name": "totalBalance",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "value": "1000000000000000000"
+      }
+    ],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "donatorName",
+        "type": "string"
+      }
+    ],
+    "name": "donate",
+    "outputs": [],
+    "payable": true,
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "actionCoefficient",
+        "type": "uint256"
+      }
+    ],
+    "name": "addAction",
+    "outputs": [],
+    "payable": false,
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "payable": true,
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "donatorName",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "DonationReceived",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "username",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "addr",
+        "type": "address"
+      }
+    ],
+    "name": "ContributorAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "name": "username",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "name": "amount",
+        "type": "uint256"
+      }
+    ],
+    "name": "ContributorRewarded",
+    "type": "event"
+  }
+]

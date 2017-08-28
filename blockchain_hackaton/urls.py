@@ -15,9 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+
+from blockchain_hackaton.views.merge_hook import merge_hook_view
 from . import views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^sample/', views.sample_view),
+    # url(r'^sample/', views.sample_view),
+    url(r'^merge_hook/', merge_hook_view),
 ]
