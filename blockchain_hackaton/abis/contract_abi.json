@@ -18,19 +18,21 @@
     "type": "function"
   },
   {
-    "constant": false,
+    "constant": true,
     "inputs": [
       {
-        "name": "username",
-        "type": "string"
-      },
-      {
-        "name": "action",
+        "name": "",
         "type": "uint256"
       }
     ],
-    "name": "handleContribution",
-    "outputs": [],
+    "name": "actionPoints",
+    "outputs": [
+      {
+        "name": "",
+        "type": "uint256",
+        "value": "3000"
+      }
+    ],
     "payable": false,
     "type": "function"
   },
@@ -52,16 +54,23 @@
     "type": "function"
   },
   {
-    "constant": true,
-    "inputs": [],
-    "name": "actionPoints",
-    "outputs": [
+    "constant": false,
+    "inputs": [
       {
-        "name": "",
-        "type": "bytes",
-        "value": "0x030201"
+        "name": "username",
+        "type": "string"
+      },
+      {
+        "name": "action",
+        "type": "uint256"
+      },
+      {
+        "name": "numberLines",
+        "type": "uint256"
       }
     ],
+    "name": "handleContribution",
+    "outputs": [],
     "payable": false,
     "type": "function"
   },
@@ -73,7 +82,7 @@
       {
         "name": "",
         "type": "uint256",
-        "value": "1000000000000000000"
+        "value": "3000000000000000000"
       }
     ],
     "payable": false,
@@ -155,6 +164,11 @@
       {
         "indexed": false,
         "name": "amount",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "name": "action",
         "type": "uint256"
       }
     ],
