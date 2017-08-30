@@ -1,4 +1,4 @@
-"""blockchain_hackaton URL Configuration
+"""diplomski URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/1.11/topics/http/urls/
@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 
-from blockchain_hackaton.views.merge_hook import merge_hook_view
+from diplomski.views.merge_hook import merge_hook_view
 from . import views
 
 urlpatterns = [

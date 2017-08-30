@@ -1,7 +1,7 @@
 from django.test.testcases import TestCase
 
-from blockchain_hackaton.contract_handler import ContractHandler
-from blockchain_hackaton.getpullrequest.external_call.external_call import get_number_lines
+from diplomski.contract_handler import ContractHandler
+from diplomski.getpullrequest.external_call.external_call import get_number_lines
 class TestContractActions(TestCase):
     def test_add_contributor(self):
 

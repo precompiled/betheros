@@ -1,5 +1,5 @@
 """
-Django settings for blockchain_hackaton project on Heroku. For more info, see:
+Django settings for diplomski project on Heroku. For more info, see:
 https://github.com/heroku/heroku-django-template
 
 For more information on this file, see
@@ -52,12 +52,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'blockchain_hackaton.urls'
+ROOT_URLCONF = 'diplomski.urls'
 
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['blockchain_hackaton/pages'],
+        'DIRS': ['diplomski/pages'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -71,7 +71,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'blockchain_hackaton.wsgi.application'
+WSGI_APPLICATION = 'diplomski.wsgi.application'
 
 
 # Database
@@ -125,7 +125,7 @@ STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = [
-    os.path.join(PROJECT_ROOT, '../blockchain_hackaton/../static'),
+    os.path.join(PROJECT_ROOT, '../diplomski/../static'),
 ]
 
 # Simplified static file serving.

@@ -3,7 +3,7 @@ from scrapy.crawler import CrawlerProcess, CrawlerRunner
 from scrapy.utils.project import get_project_settings
 from scrapy.settings import Settings
 from scrapy.utils.log import configure_logging
-from blockchain_hackaton.getpullrequest.getpullrequest.spiders.pr_spider import PRSpider
+from diplomski.getpullrequest.getpullrequest.spiders.pr_spider import PRSpider
 import json
 import os
 

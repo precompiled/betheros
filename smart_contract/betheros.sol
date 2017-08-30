@@ -12,7 +12,7 @@ contract Betheros {
     uint constant MIN_NUMBER_LINES = 50;
     uint[] public actionPoints;
 
-    address administrator;//language proviedes to check administrator.balance ?
+    address administrator;//language provides to check administrator.balance ?
     uint public totalBalance;
     mapping (string => address) contributors;//KISS
     mapping (string => uint) contributorCoefficients;
@@ -35,8 +35,6 @@ contract Betheros {
         actionPoints.push(500);//2-IssueSolved
         actionPoints.push(5000);//3-FutureFeatureEnhancement
 
-        addContributor("vidakdk", 0xE9dE986aC1EFD2C76b84C40C30483c5a5F3F9eC5);
-        addContributor("Di-Mi", 0x415ADfBA2FbeD9e67Ad5400156cB4e8Bc3bAE6fC);
         addContributor("dontstop", 0xaf2aa3E0226856aE1e0E92021f5F6D5F552437b2);
     }
 
